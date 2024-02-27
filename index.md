@@ -1,38 +1,55 @@
-## Welcome to GitHub Pages test
+<details>
+<summary>
+## About Me
+</summary>
+Hello! My name is Robert and I am a full stack, cloud native, engineer. I started as a Trainer at a 
+coding bootcamp, teaching Java full stack with Angular. During my time, I developed in-house 
+applications and taught a myriad of technologies for/to junior engineers that were typically fresh
+out of college/university. As tech stacks varied, so did my exploration of technology. I have a love
+for that exploration and have become so much more than just a full stack engineer. 
 
-You can use the [editor on GitHub](https://github.com/connellrobert/connellrobert.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Full Stack Arc
+I learned and used Java with Spring and Angular 8 for full stack applications. I would dabble in DevOps
+and Cloud, but only slightly, as I learned my way around enterprise applications. I eventually migrated
+to React with NodeJS and learned the intricacies around the runtimes and frameworks. I never stopped at 
+just learning the high level basics and how to use them, but how they worked and why they would be used. 
+I would often question what the reasons were on why they would be preferred and in what areas they would
+outperform other options.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Overall, I dove into technologies and learned the ins and outs of their inner workings. I taught the 
+technologies as a way to reinforce my own learnings. I loved learning more and being challenged in 
+working with and understanding different languages and technologies. By the end of my tenure as a trainer
+at the bootcamp, I learned, taught and used the following different languages, technologies, runtimes, 
+and frameworks:
+- Core Java
+- Hibernate
+- Java with Spring Framework (including, but not limited to, boot and data)
+- Angular 2+
+- React w/Typescript
+- React Native
+- NodeJS
+- Express
+- Oracle DB
+- Postgres DB
+- Linux computing
+- Containerization
+- Microservices Architecture and Design Patterns
+- Messaging protocols Rest and Soap
+- AWS DevOps, networking, EC2, RDS, and serverless services
 
-### Markdown
+Overall, I helped over 100 junior developers begin their career and taught myself an enormous amount
+of in-depth knowledge and was tested on that knowledge by passing it on to all of them. I became 
+exceptionally good at debugging applications and assisting junior developers with their projects and
+career path.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Cloud Engineering Arc
+As coding began to become to stale, I journeyed deeper into cloud-native technologies, DevOps, and 
+deployment environments such as Kubernetes and AWS Serverless. I changed companies and moved roles from
+a full stack developer to a Cloud Engineer. Luckily, my role allowed for more diversity and I was able 
+to work in AWS Serverless, DevOps, Cloud engineering, as well as architecting entire kubernetes based 
+systems. 
 
-```markdown
-Syntax highlighted code block
+During this time, I began working in an Openshift environment and orchestrating application deployments
+with Gitlab CI. 
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/connellrobert/connellrobert.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
+</details>
