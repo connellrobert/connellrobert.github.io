@@ -1,7 +1,5 @@
-<details>
-<summary>
+
 ## About Me
-</summary>
 Hello! My name is Robert and I am a full stack, cloud native, engineer. I started as a Trainer at a 
 coding bootcamp, teaching Java full stack with Angular. During my time, I developed in-house 
 applications and taught a myriad of technologies for/to junior engineers that were typically fresh
@@ -51,5 +49,3 @@ systems.
 
 During this time, I began working in an Openshift environment and orchestrating application deployments
 with Gitlab CI. 
-
-</details>
