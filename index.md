@@ -12,14 +12,16 @@ for that exploration and have become so much more than just a full stack enginee
     - [Cloud Engineering Arc](#cloud-engineering-arc)
 - [Projects](#projects)
     - [Company Projects](#company-projects)
-        - [DebugMe](#debugme-developer-assessment-program-revature)
-        - [Developer Assessment Platform](#developer-assessment-platform-revature)
-        - [Code Accelerator](#code-accelerator-deloitte)
-        - [AI Marketplace](#ai-marketplace-deloitte)
-        - [AWS Serverless Data Pipeline](#aws-serverless-data-pipeline-deloitte)
-        - [Cybersecurity Automation Platform](#cybersecurity-automation-platform-deloitte)
+        - Revature
+            - [DebugMe](#debugme-developer-assessment-program-revature)
+            - [Developer Assessment Platform](#developer-assessment-platform-revature)
+        - Deloitte
+            - [Code Accelerator](#code-accelerator-deloitte)
+            - [AI Marketplace](#ai-marketplace-deloitte)
+            - [AWS Serverless Data Pipeline](#aws-serverless-data-pipeline-deloitte)
+            - [Cybersecurity Automation Platform](#cybersecurity-automation-platform-deloitte)
     - [Personal Projects](#personal-projects)
-    
+
 ## Full Stack Arc
 I learned and used Java with Spring and Angular 8 for full stack applications. I would dabble in DevOps
 and Cloud, but only slightly, as I learned my way around enterprise applications. I eventually migrated
