@@ -51,6 +51,14 @@ involving a custom kubernetes operator.
 
 ## Projects
 ### Company Projects
+#### DebugMe Developer Assessment Program (Revature)
+A custom program designed to be a cli video game with numerous bugs for junior developers to fix. This was
+intended to increase developer efficiency at problem solving a legacy codebase with visual feedback. I included
+a codebase for other trainers to use as a reference point to assess whether the dev had completed the task at hand.
+
+Tech Stack:
+- Java
+
 #### Developer Assessment Platform (Revature)
 A multi tiered assessment system that tested junior developers' abilities in programming aptitude. We 
 used Junit and the Reflections API to test how developers wrote the code and if they wrote it in a high
@@ -84,6 +92,23 @@ Tech Stack:
 - Openshift
 - Gitlab CI
 - Helm
+
+#### AI Marketplace (Deloitte)
+I was presented an early-stage application that needed an architecture. It was meant to be a 
+marketplace for AI training models where users could click a link and be brought to the model's
+page. The original design was my first to be done. I presented a system that incorporated microservice
+design patterns, Kubernetes based deployments, and usage of external web services. The design was later 
+scaled down due to a reduced need for original features and developer budget. The new system brought
+simplicity and less overhead for both infrastructure and development/maintenance labor.
+
+Tech Stack:
+- Kubernetes
+- NestJS
+- Angular
+- GKE
+- GCP Services
+    - Cloud Build
+    - Cloud Run
 
 #### AWS Serverless Data Pipeline (Deloitte)
 A code accelerator for creating secure, serverless, applications in AWS. It consisted of using
@@ -120,24 +145,6 @@ Tech Stack:
     - S3
     - DynamoDB
 
-#### AI Marketplace (Deloitte)
-I was presented an early-stage application that needed an architecture. It was meant to be a 
-marketplace for AI training models where users could click a link and be brought to the model's
-page. The original design was my first to be done. I presented a system that incorporated microservice
-design patterns, Kubernetes based deployments, and usage of external web services. The design was later 
-scaled down due to a reduced need for original features and developer budget. The new system brought
-simplicity and less overhead for both infrastructure and development/maintenance labor.
-
-Tech Stack:
-- Kubernetes
-- NestJS
-- Angular
-- GKE
-- GCP Services
-    - Cloud Build
-    - Cloud Run
-
-
 #### Cybersecurity Automation Platform (Deloitte)
 I was brought into a project that intended to solve the need for a hardened container registry and
 a container hardening pipeline building secure custom applications. The original project used a single
@@ -160,4 +167,39 @@ new domains, and anything else the environment required. Any updates came in the
 presented to all the integrated teams for manual merges and conflict resolution.
 
 As a solution for this, we redesigned the system from the ground up. I designed a kubernetes operator that
-automated the installation of new components, including the container hardening pipeline. 
+automated the installation of new components, including the container hardening pipeline. It allowed for a 
+central configuration to be generated based on the environment which automatically configured any component
+during installation. I created Custom Resource Definitions to allow the operator to understand the details
+of the newly installed component, the images it was dependent on, the helm charts it required, and the helm
+chart values to use during installation. The values template used jinja to incorporate parts of the manifest
+as well as the central configuration for the helm installation. We created a CLI to ease working with the 
+platform and an API to expose specific endpoints for operating on the platform, such as triggering a pipeline
+or installing a new component. Kubernetes would monitor the k8s native workloads such as deployments and services,
+while the operator would monitor the manifests to ensure the parts of the component were still intact.
+
+Tech Stack:
+- Jenkins
+- Gitlab CI
+- Helm
+- Tekton
+- Python 3
+- KOPF (Kubernetes Operator Pythonic Framework)
+- Python Typer
+- Python RapidAPI
+- Jinja
+- ElasticSearch/Kibana
+- AWS Opensearch
+- Kubernetes CRD
+- Nexus
+- DefectDojo
+- Artifactory
+- Docker
+- Podman
+- Docker in Docker
+- Renovate
+- Syft
+- Grype
+- OpenSCAP
+- Checkov
+
+### Personal Projects
