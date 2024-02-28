@@ -4,8 +4,21 @@ Hello! My name is Robert and I am a full stack, cloud native, engineer. I starte
 coding bootcamp, teaching Java full stack with Angular. During my time, I developed in-house 
 applications and taught a myriad of technologies for/to junior engineers that were typically fresh
 out of college/university. As tech stacks varied, so did my exploration of technology. I have a love
-for that exploration and have become so much more than just a full stack engineer. 
+for that exploration and have become so much more than just a full stack engineer.
 
+**Table of Contents:**
+- [About Me](#about-me)
+    - [Full Stack Arc](#full-stack-arc)
+    - [Cloud Engineering Arc](#cloud-engineering-arc)
+- [Projects](#projects)
+    - [Company Projects](#company-projects)
+        - [DebugMe](#debugme-developer-assessment-program-revature)
+        - [Developer Assessment Platform](#developer-assessment-platform-revature)
+        - [Code Accelerator](#code-accelerator-deloitte)
+        - [AI Marketplace](#ai-marketplace-deloitte)
+        - [AWS Serverless Data Pipeline](#aws-serverless-data-pipeline-deloitte)
+        - [Cybersecurity Automation Platform](#cybersecurity-automation-platform-deloitte)
+    - [Personal Projects](#personal-projects)
 ## Full Stack Arc
 I learned and used Java with Spring and Angular 8 for full stack applications. I would dabble in DevOps
 and Cloud, but only slightly, as I learned my way around enterprise applications. I eventually migrated
