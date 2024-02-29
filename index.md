@@ -271,7 +271,7 @@ Tech Stack:
 Architecture:
 ![Gratitude Architecture](https://raw.githubusercontent.com/connellrobert/gratitude-serverless-api/main/design/architecture.png)
 
-Github Link: [github link to repository](https://github.com/connellrobert/gratitude-serverless-api)
+Github Link: [Gratitude Serverless API Repository](https://github.com/connellrobert/gratitude-serverless-api)
 
 #### PixelArt Serverless API
 When OpenAI opened their API to developers, I wanted to make an application that utilized what they made available.
@@ -314,4 +314,4 @@ Tech Stack:
 Architecture:
 ![PixelArt Architecture](https://raw.githubusercontent.com/connellrobert/pixelart-serverless-api/main/design/architecture.png)
 
-Github Link: [github link to repository](https://github.com/connellrobert/pixelart-serverless-api)
+Github Link: [PixelArt Serverless API Repository](https://github.com/connellrobert/pixelart-serverless-api)
