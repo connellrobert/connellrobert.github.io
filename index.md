@@ -67,6 +67,9 @@ involving a custom kubernetes operator.
 
 ## Projects
 ### Company Projects
+The following projects are closed source and owned by the company. I refer to them here to detail my time and 
+contribution to the project to provide clarity on my experience and expertise.
+
 #### DebugMe Developer Assessment Program (Revature)
 A custom program designed to be a cli video game with numerous bugs for junior developers to fix. This was
 intended to increase developer efficiency at problem solving a legacy codebase with visual feedback. I included
@@ -219,3 +222,55 @@ Tech Stack:
 - Checkov
 
 ### Personal Projects
+Although I have worked on hundreds of personal projects, very little make it into VCS. Out of those, very little
+are fully representative of my capabilities. The below are the best ones I've made. As opposed to creating projects
+that are able to run locally, I create applications that are ready to be deployed and running in a real environment
+at a moments notice. If, for whatever reason, you find an application that has an issue, bug, or is not deployable, 
+then happily open an issue on the github repository so I am knowledgeable about it and can fix it. Unless someone is
+using it, I won't typically know if something is wrong.
+
+#### Gratitude Serverless API
+This project was designed as a serverless backend for a mobile application. Users would subscribe to categories
+of compliments and would get notifications with a compliment. Meant as a mental health application to support
+users' well beings, it would randomly get a compliment, based on the category. It used AWS Cognito for 
+authentication and user management. API Gateway used cognito to verify users, prior to forwarding the request
+to step functions. The step functions would orchestrate lambdas to extract the username, look up the user's
+information in a postgresql database, and it would perform the necessary function (update subscribed categories, 
+get a random compliment, etc.). When a user signed up for cognito, it used a lambda trigger to take the user's 
+information and place it inside the postgresql database. RDS was the only server-based part of the application, 
+aside from a bastion EC2 that served as an entryway for users to seed the db. DB credentials were automatically
+generated and stored inside AWS Secrets manager and mounted to the RDS for rolling credentials.
+
+What was cool:
+I hand wrote the OpenAPI yaml spec for API Gateway, using AWS OpenAPI extensions and variables to orchestrate 
+responses and configurations. This was automatically imported through the SAM template for API Gateway. It featured
+custom models and headers used for requests and responses, custom templating for response generation, and extensions
+to integrate the step functions at the API definition level. It was unreasonably, and difficult to iterate on, when
+I used a single template, so I broke the template up into several yaml files. I used exports and imports in 
+Cloudformation to allow the resources to be used across stacks.
+
+Tech Stack:
+- AWS SAM
+- AWS API Gateway
+- AWS Lambda
+- AWS Step Functions
+- AWS Cognito
+- AWS RDS
+- AWS EC2
+- AWS VPC
+- AWS Security Groups
+- AWS DynamoDB
+- AWS Cloudwatch
+- AWS Secrets Manager
+- NodeJS (Lambda Runtime)
+- Jest (Unit testing)
+- Postman (Integration Testing)
+- PostgresQL
+- OpenAPI
+
+Architecture:
+![Gratitude Architecture](https://raw.githubusercontent.com/connellrobert/gratitude-serverless-api/main/design/architecture.png)
+
+Github Link: [github link to repository](https://github.com/connellrobert/gratitude-serverless-api)
+
+#### PixelArt Serverless API
