@@ -244,6 +244,7 @@ aside from a bastion EC2 that served as an entryway for users to seed the db. DB
 generated and stored inside AWS Secrets manager and mounted to the RDS for rolling credentials.
 
 What was cool:
+
 I hand wrote the OpenAPI yaml spec for API Gateway, using AWS OpenAPI extensions and variables to orchestrate 
 responses and configurations. This was automatically imported through the SAM template for API Gateway. It featured
 custom models and headers used for requests and responses, custom templating for response generation, and extensions
@@ -293,6 +294,7 @@ received and was processing. Successive requests could be sent to see the status
 for the image if it was ready.
 
 What was cool:
+
 Prior to using terraform, I was using AWS SAM again. However, after the limitations found in the project I made
 at deloitte, I decided to use serverless framework. I found more limitations earlier in the project with this. I
 forewent a infrastructure+project management framework and just decided to use terraform. This was a great decision,
