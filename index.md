@@ -274,3 +274,44 @@ Architecture:
 Github Link: [github link to repository](https://github.com/connellrobert/gratitude-serverless-api)
 
 #### PixelArt Serverless API
+When OpenAI opened their API to developers, I wanted to make an application that utilized what they made available.
+This was an image generating application meant as a backend for a mobile application. It will collect a prompt and
+generate an image, collect and image and a mask and use ai to edit an image, and use the api to generate an image
+variant if given an image. I used go as the lambda runtime and terraform as the infrastructure as code to automate
+the AWS infrastructure. Earthly was used as a monorepo manager and build tool to orchestrate testing, building, 
+deploying, and destroying the infrastructure through containerized tools.
+
+As opposed to using step functions to orchestrate the lambda functions, I used an event driven architecture with
+SQS Queues to trigger the functions. Lambdas would collect the request from API Gateway, submit the processed 
+request to SQS and DynamoDB, another lambda function would pick up the SQS message and connect with the OpenAI 
+API. Once the image was generated and gathered, it saved the image to s3 and updated the DynamoDB entry with the
+updated information. Errors would trigger another workflow for retries and update the DynamoDB entry also. Clients
+would send the request for image generation and immediately receive a response stating that the request had been 
+received and was processing. Successive requests could be sent to see the status of the request and would get a URL
+for the image if it was ready.
+
+What was cool:
+Prior to using terraform, I was using AWS SAM again. However, after the limitations found in the project I made
+at deloitte, I decided to use serverless framework. I found more limitations earlier in the project with this. I
+forewent a infrastructure+project management framework and just decided to use terraform. This was a great decision,
+since terraform was proven to do everything I needed, just with a little extra leg work. One of the biggest hurdles
+I had to overcome was the automation of building and deploying the code for the lambdas. Earthly helped orchestrate
+this. The terraform code would archive the lambda binary into a zip file and deploy it to a newly created s3 bucket.
+Using Earthly, I made the build stage to the function code a dependency to the infrastructure deployment. It would
+automate building the code, saving the binary to cache, and mounting the binary to the terraform container so it
+could be gathered for archiving. The lambdas simply referenced the zipped file in the s3 bucket for deployment.
+
+Tech Stack:
+- AWS Lambda
+- AWS SQS
+- AWS DynamoDB
+- AWS Cognito
+- AWS Cloudwatch
+- Go
+- Terraform
+- Earthly
+
+Architecture:
+![PixelArt Architecture](https://raw.githubusercontent.com/connellrobert/pixelart-serverless-api/main/design/architecture.png)
+
+Github Link: [github link to repository](https://github.com/connellrobert/pixelart-serverless-api)
