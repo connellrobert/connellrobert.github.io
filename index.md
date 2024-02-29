@@ -21,6 +21,8 @@ for that exploration and have become so much more than just a full stack enginee
             - [AWS Serverless Data Pipeline](#aws-serverless-data-pipeline-deloitte)
             - [Cybersecurity Automation Platform](#cybersecurity-automation-platform-deloitte)
     - [Personal Projects](#personal-projects)
+        - [Gratitude Serverless API](#gratitude-serverless-api)
+        - [PixelArt Serverless API](#pixelart-serverless-api)
 
 ## Full Stack Arc
 I learned and used Java with Spring and Angular 8 for full stack applications. I would dabble in DevOps
