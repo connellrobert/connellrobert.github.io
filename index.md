@@ -59,13 +59,17 @@ exceptionally good at debugging applications and assisting junior developers wit
 career path.
 
 ## Cloud Engineering Arc
-As coding began to become to stale, I journeyed deeper into cloud-native technologies, DevOps, and 
+As coding began to stale, I journeyed deeper into cloud-native technologies, DevOps, and 
 deployment environments such as Kubernetes and AWS Serverless. I changed companies and moved roles from
 a full stack developer to a Cloud Engineer. Luckily, my role allowed for more diversity and I was able 
-to work in AWS Serverless, DevOps, Cloud engineering, as well as architecting entire kubernetes based 
+to work in AWS Serverless, DevOps, Cloud engineering, as well as being able to architect entire kubernetes based 
 systems. During this time, I began working in an Openshift environment and orchestrating application
 deployments with Gitlab CI. I worked several projects before promoting into a team lead role on a project
 involving a custom kubernetes operator.
+
+
+
+
 
 ## Projects
 ### Company Projects
