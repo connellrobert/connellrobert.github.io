@@ -1,4 +1,4 @@
-export const toast = ({ title, description }) => {
+export const toast = ({ title, description }: { title: string, description: string }) => {
   // In a real implementation, this would use a toast library or context
   console.log(`Toast: ${title} - ${description}`)
 

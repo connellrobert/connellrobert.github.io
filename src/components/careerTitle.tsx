@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const TextAnimation = ({ texts, delay }: { texts: string[], delay: number }) => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
