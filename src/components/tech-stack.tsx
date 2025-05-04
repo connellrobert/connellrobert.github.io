@@ -15,10 +15,11 @@ export default function TechStack() {
       skills: [
         { name: "Go", level: 90 },
         { name: "Typescript", level: 85 },
+        { name: "JavaScript", level: 90 },
         { name: "Python", level: 88 },
         { name: "Rust", level: 77 },
         { name: "C#", level: 70 },
-        { name: "JavaScript", level: 90 },
+        { name: "Java", level: 85 },
       ],
     },
     concepts: {
