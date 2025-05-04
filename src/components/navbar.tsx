@@ -35,7 +35,6 @@ export default function Navbar() {
     { name: "Projects", href: "projects" },
     { name: "Testimonials", href: "testimonials" },
     { name: "Contact", href: "contact" },
-    { name: "Resume", href: "resume" },
   ]
 
   return (
@@ -62,6 +61,13 @@ export default function Navbar() {
                 {link.name}
               </button>
             ))}
+              <button 
+                key="resume"
+                className="text-muted-foreground hover:text-foreground transition-colors py-2 text-left" 
+                onClick={() => window.open("https://random.s3.us-east-1.amazonaws.com/Robert+Connell+Resume.pdf", "_blank")}
+              >
+                Resume
+              </button>
           </nav>
 
           {/* Mobile Navigation Toggle */}
@@ -85,7 +91,13 @@ export default function Navbar() {
                   {link.name}
                 </button>
               ))}
-              <Button className="w-full">Resume</Button>
+              <button 
+                key="resume"
+                className="text-muted-foreground hover:text-foreground transition-colors py-2 text-left" 
+                onClick={() => window.open("https://random.s3.us-east-1.amazonaws.com/Robert+Connell+Resume.pdf", "_blank")}
+              >
+                Resume
+              </button>
             </nav>
           </div>
         </div>
