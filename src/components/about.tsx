@@ -48,7 +48,8 @@ export default function About() {
             <p className="text-muted-foreground mb-6">
               I was a mechanic for nearly 10 years and I loved troubleshooting complex problems and uncovering
               solutions by understanding the entire system. It's through that contextual understanding
-              and my love for problem solving that I've found a passion for software development.
+              and my love for problem solving that I've found a passion for software development. 
+              <br/><br/>
               I went back to school and went into a bootcamp to begin my career in engineering. Throughout
               this time, I've connected with so many amazing people and learned so much from working
               with them. I now work on complex cloud systems ranging from Kubernetes to Serverless architectures
