@@ -39,7 +39,7 @@ const TextAnimation = ({ texts, delay }: { texts: string[], delay: number }) => 
   }, [currentTextIndex, displayedText, isTyping, texts, delay]);
 
   return (<div>
-    <span className="text-accent">{displayedText}</span>
+    <span className="text-primary">{displayedText}</span>
     <span className="animate-blink">|</span>
     </div>)
 };

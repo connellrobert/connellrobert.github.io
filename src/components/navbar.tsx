@@ -53,21 +53,21 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <button
+              <Button
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.name}
-              </button>
+              </Button>
             ))}
-              <button 
+              <Button 
                 key="resume"
-                className="text-muted-foreground hover:text-foreground transition-colors py-2 text-left" 
+                variant="link"
                 onClick={() => window.open("https://random.s3.us-east-1.amazonaws.com/Robert+Connell+Resume.pdf", "_blank")}
               >
                 Resume
-              </button>
+              </Button>
           </nav>
 
           {/* Mobile Navigation Toggle */}
@@ -91,13 +91,13 @@ export default function Navbar() {
                   {link.name}
                 </button>
               ))}
-              <button 
+              <Button 
                 key="resume"
                 className="text-muted-foreground hover:text-foreground transition-colors py-2 text-left" 
                 onClick={() => window.open("https://random.s3.us-east-1.amazonaws.com/Robert+Connell+Resume.pdf", "_blank")}
               >
                 Resume
-              </button>
+              </Button>
             </nav>
           </div>
         </div>
