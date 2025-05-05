@@ -33,7 +33,7 @@ export default function Navbar() {
     { name: "About", href: "about" },
     { name: "Tech Stack", href: "tech-stack" },
     { name: "Projects", href: "projects" },
-    { name: "Testimonials", href: "testimonials" },
+    // { name: "Testimonials", href: "testimonials" },
     { name: "Contact", href: "contact" },
   ]
 
