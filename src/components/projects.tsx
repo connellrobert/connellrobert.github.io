@@ -67,7 +67,7 @@ export default function Projects() {
         "AWS State Machine for workflow orchestration",
       ],
       demoLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/connellrobert/pixelart-serverless-api",
       fullDescription:
         "This project was created as a backend for a potential mobild application. The inspiration came shortly after OpenAI began its ascent to being the leading company for Artificial Intelligence and imgae generation was still in its infancy. I wanted to create a simple API that would allow me to generate images from text prompts without relying on running infrastructure.",
     },
@@ -86,7 +86,7 @@ export default function Projects() {
         "AWS SAM for deployment",
       ],
       demoLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/connellrobert/gratitude-serverless-api",
       fullDescription:
         "This project was created as a backend for a potential mobile application. Mental Health was declining during the pandemic and I wanted to provide a service to assist in that with gratuitous sayings.",
     },
