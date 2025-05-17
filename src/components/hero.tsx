@@ -7,7 +7,7 @@ import CareerTitle from "./careerTitle"
 // import ThreeAnimation from './three-animation'
 
 export default function Hero() {
-  const careerTitles = ["Software Engineer", "Cloud Engineer", "Full Stack Developer", "DevSecOps Engineer", "AI Engineer"]
+  const careerTitles = ["Platform Engineer", "Software Engineer", "Cloud Engineer", "Full Stack Developer", "DevSecOps Engineer", "AI Engineer"]
 
 
   const scrollToSection = (sectionId: string) => {
